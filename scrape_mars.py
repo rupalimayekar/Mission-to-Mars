@@ -105,7 +105,7 @@ def scrape() :
 
         # Extract the latest tweet
         soup = bs(browser.html, 'html.parser')
-        mars_weather = soup.find('p', class_='TweetTextSize').text
+        mars_weather = soup.find('p', class_='TweetTextSize').text.strip()
         print("Mars Weather : " + mars_weather)
 
         # Add the weather to the data object
@@ -151,7 +151,7 @@ def scrape() :
         # Loop through the list items and extract each image url and title
         for item in items:
                 # The title is in an h3 tag
-                title = item.find('h3').text
+                title = item.find('h3').text.strip()
                 print(title)
                 
                 # Click on the title to get to the page where we will get the full image url

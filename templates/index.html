@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mission to Mars</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container-fluid contentpage">
+
+    <div class="row">
+      <div class="col-md-12">
+      <div class="jumbotron text-center">
+        <h1>Mission to Mars</h1>
+        <h6>Go to Mars and get the latest and greatest about the planet...</h6>
+        <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Go to Mars</a></p>
+      </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-default">
+            <h3>Latest Mars News</h3>
+            <h5>{{mars_data.News.title}}</h5>
+            {{mars_data.News.description}}
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-default">
+          <div class="row">
+          <div class=col-md-8>
+              <h3>Featured Mars Image</h3>
+              <img class="img-responsive" src={{mars_data.Featured_Image}} alt="Featured Mars Image">
+          </div>
+          <div class="col-md-4">
+              <br><br><br><br>
+              <div class="panel panel-default">
+                <h3>Current Weather on Mars</h3>
+                {{mars_data.Weather}}
+              </div>
+              <div class="panel panel-default">
+                <h3>Mars Facts</h3>
+                {{ mars_data.Facts|safe }}
+              </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-12">
+        <div class= "panel panel-default">
+            <h3 class="text-center">Mars Hemispheres</h3>
+            <hr>
+          <div class="col-md-6 panel panel-default">
+            <img class="img-responsive" src={{mars_data.Hemispheres[0].img_url}} alt={{mars_data.Hemispheres[0].img_url}}>
+            <h5>{{mars_data.Hemispheres[0].title}}</h5>
+          </div>
+          <div class="col-md-6 panel panel-default">
+            <img class="img-responsive" src={{mars_data.Hemispheres[1].img_url}} alt={{mars_data.Hemispheres[1].img_url}}>
+            <h5>{{mars_data.Hemispheres[0].title}}</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 panel panel-default">
+            <img class="img-responsive" src={{mars_data.Hemispheres[2].img_url}} alt={{mars_data.Hemispheres[2].img_url}}>
+            <h5>{{mars_data.Hemispheres[0].title}}</h5>
+          </div>
+          <div class="col-md-6 panel panel-default">
+            <img class="img-responsive" src={{mars_data.Hemispheres[3].img_url}} alt={{mars_data.Hemispheres[3].img_url}}>
+            <h5>{{mars_data.Hemispheres[0].title}}</h5>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
