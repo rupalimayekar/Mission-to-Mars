@@ -22,7 +22,7 @@ The following technologies are used for this project:
 * Mongo database to store all the scraped information
 * HTML & Bootstrap for the web page design
 
-You can checkout the scrape-mars.md file for details on how the data scraping is done.
+You can checkout the [scrape-mars.md](scrape-mars.md) file for details on how the data scraping is done.
 
 ## Resulting webpage
 The following is the sample of the resulting webpage that is created by this application.
