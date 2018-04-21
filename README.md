@@ -1,6 +1,6 @@
 # Mission-to-Mars
 
-![mission_to_mars](Images/mission_to_mars.jpg)
+![mission_to_mars](images/mission_to_mars.jpg)
 
 This Web Scraping project gets information about the planet Mars from various websites and displays it on a single html page. It saves the scraped information into a Mongo database and then retrieves it for diaplay on an html page.
 
