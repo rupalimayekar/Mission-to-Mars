@@ -29,6 +29,11 @@ The following is the sample of the resulting webpage that is created by this app
 
 [mission_to_mars](Mission-to-Mars.html)
 
+![mars-html1](images/mars1.png)
+![mars-html2](images/mars2.png)
+![mars-html3](images/mars3.png)
+![mars-html4](images/mars4.png)
+
 
 
         
